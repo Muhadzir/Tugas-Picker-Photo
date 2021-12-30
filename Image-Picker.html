@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Javascript ES6 - Muhadzir</title>
+</head>
+<body style="background-color: rgb(64, 0, 124);">
+  <style>
+      div{
+        display: flex;
+       justify-content: center;
+       align-items: center;
+       height: 100vh;
+       box-sizing: border-box;
+      }
+  </style>
+    <div>
+        <select onchange="change()" id="One">
+            <option>Select</option>
+            <option value="jerapah">jerapah</option>
+            <option value="gajah">gajah</option>
+            <option value="singa">singa</option>
+            <option value="buaya">buaya</option>
+            <option value="zebra">zebra</option>
+        </select>
+    </div><br>
+        <img src="" alt="" id="Two" width="100%"><br>
+
+<script>
+    function change(){
+        let img = document.getElementById("One").value
+        let image = document.getElementById("Two")
+        if(img == "jerapah"){
+           image.src = "jerapah.jpg"
+            alert ("ini jerapah!")
+        }else if(img == "gajah"){
+            image.src = "gajah.jpg"
+            alert ("Ini Gajah!")
+        }else if(img == "singa"){
+            image.src = "singa.jpg"
+            alert ("ini singa!")
+        }else if(img == "buaya"){
+            image.src = "buaya.jpg"
+            alert ("ini buaya!")
+        }else if(img == "zebra") {
+            image.src = "zebra.jpg"
+            alert("ini zebra!")
+        }    
+    }
+</script>
+
+</body>
+</html>
